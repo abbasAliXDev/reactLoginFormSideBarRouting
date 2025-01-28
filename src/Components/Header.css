@@ -1,0 +1,96 @@
+header{
+    width: 100%;
+    height: auto;
+    max-width: 2000px;
+}
+nav{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #302e2e;
+    padding: 0% 2%;
+}
+#logo{
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    font-size: 30px;
+}
+#rgtSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#rgtSide ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #DDDDDD;
+    justify-content: space-between;
+}
+#rgtSide ul li{
+    cursor: pointer;
+}
+.loginBtn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #dddddd63;
+    padding: 8px 30px;
+    text-transform: uppercase;
+}
+.signUpBtn{
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #100f0f;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 8px 30px;
+}
+
+#rgtSide #btnDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.iconDiv{
+    cursor: pointer;
+    font-size: 20px;
+}
+.iconDiv:hover{
+    transition: 0.25s all ease;
+    transform: scale(1.05);
+}
+.iconDiv:active{
+    transition: 0.3s all ease;
+    transform: scale(0.95);
+}
+
+@media only screen and (max-width: 720px) {
+    #rgtSide ul, #rgtSide #btnDiv{
+        display: none;
+    }
+    nav{
+        padding: 0% 5%;
+    }
+}

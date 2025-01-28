@@ -1,0 +1,94 @@
+.sideBarDiv{
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    transition: 0.3s all ease;
+    left: -300px;
+    top: 0%;
+    color: #222222;
+    z-index: 9999;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sideBarDivActive{
+    left: 0% !important;
+    top: 0% !important;
+    transition: 0.3s all ease;
+}
+.logo{
+    width: 100%;
+    height: auto;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.mainLink{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainLink li{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 0px;
+}
+.subLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 25px;
+    font-size: 14px;
+    flex-direction: column;
+}
+.subLink li{
+    font-weight: 500;
+    color: #3c3939;
+    padding: 3px 0px;
+}
+.byDefaultHidden{
+    display: none;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    justify-content: center;
+    color: #3c3939;
+    width: 100%;
+}
+
+.crossMark{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    .byDefaultHidden{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .sideBarDiv{
+        left: 100%;
+        width: 100%;
+    }
+    .crossMark{
+        display: flex;
+    }
+}
